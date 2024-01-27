@@ -5,46 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-    <style>
-        table {
-            border-collapse: collapse;
-        }
-
-        th,
-        td {
-            border: 1px solid rgb(76, 79, 81);
-            padding: 0.5em;
-            text-align: center;
-            vertical-align: middle;
-        }
-
-        .prvni {
-            background-color: rgb(116, 120, 122);
-
-        }
-
-        .row__header {
-            background-color: rgb(116, 120, 122);
-        }
-
-        #row--white {
-            background-color: white;
-        }
-
-        .red {
-            background-color: rgb(223, 94, 94);
-
-        }
-
-        /* table>tbody >td * {
-            color: rgb(191, 158, 40)
-        } */
-
-        td {
-            color: rgb(208, 165, 11)
-        }
-    </style>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
@@ -54,12 +15,14 @@
             <col>
         </colgroup>
 
-
+        <colgroup class="druhy">
+            <col span="10">
+        </colgroup>
 
         <thead>
             <tr class="row__header">
-                <td id="row--white"></td>
-                <th>0</th>
+                <th id="row--white"></th>
+                <th>0 </th>
                 <th>1</th>
                 <th>2</th>
                 <th>3</th>
@@ -69,12 +32,26 @@
                 <th>7</th>
                 <th>8</th>
                 <th>9</th>
+            </tr>
 
+            <tr class="row__header row__header--small">
+                <th id="row--white"></th>
+                <th>7:10 - 7:55 </th>
+                <th>8:00 - 8:45</th>
+                <th>8:55 - 9:40</th>
+                <th>10:00 - 10:45</th>
+                <th>10:55 - 11:40</th>
+                <th>11:50 - 12:35</th>
+                <th>12:45 - 13:30</th>
+                <th>13:40 - 14:25</th>
+                <th>14:35 - 15:20</th>
+                <th>15:25 - 16:10</th>
             </tr>
         </thead>
+
         <tbody>
             <tr>
-                <th rowspan="2">PO</th>
+                <th rowspan="2">po 22.1</th>
                 <td rowspan="2"> </td>
                 <td class="red">OTEC</td> <!-- cervena -->
                 <td>ZBZ</td>
@@ -88,16 +65,14 @@
             </tr>
 
             <tr>
-
                 <td>VRT</td>
                 <td>ZOK</td>
                 <td class="red">TTK</td> <!-- cervena -->
                 <td>TPR</td>
             </tr>
 
-
             <tr>
-                <th rowspan="2">ÚT</th>
+                <th rowspan="2">út 23.1</th>
                 <td rowspan="2"> </td>
                 <td>PRT</td>
                 <td>PRT</td>
@@ -108,8 +83,6 @@
                 <td rowspan="2"></td>
                 <td rowspan="2">ZBE</td>
                 <td rowspan="2">PEK</td>
-
-
             </tr>
 
             <tr>
@@ -120,7 +93,7 @@
             </tr>
 
             <tr>
-                <th rowspan="2">ST</th>
+                <th rowspan="2">st 24.1</th>
                 <td rowspan="2"> </td>
                 <td rowspan="2">STR</td>
                 <td rowspan="2">MAT</td>
@@ -131,16 +104,14 @@
                 <td rowspan="2"></td>
                 <td rowspan="2" class="red"></td> <!-- cervena -->
                 <td rowspan="2" class="red"></td> <!-- cervena -->
-
             </tr>
 
             <tr>
                 <td>ANJ</td>
             </tr>
 
-
             <tr>
-                <th rowspan="2">ČT</th>
+                <th rowspan="2">čt 25.1</th>
                 <td rowspan="2"> </td>
                 <td rowspan="2">CJL</td>
                 <td rowspan="2">FYZ</td>
@@ -157,9 +128,8 @@
                 <td>ANJ</td>
             </tr>
 
-
             <tr>
-                <th rowspan="2">PÁ</th>
+                <th rowspan="2">pá 26.1</th>
                 <td rowspan="2" class="red">TEMA </td> <!-- cervena -->
                 <td rowspan="2">TEV</td>
                 <td rowspan="2">TEV</td>
@@ -175,10 +145,7 @@
             <tr>
                 <td>ANJ</td>
             </tr>
-
-
         </tbody>
-
     </table>
 </body>
 

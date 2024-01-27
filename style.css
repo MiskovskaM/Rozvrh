@@ -1,0 +1,57 @@
+table {
+    border-collapse: collapse;
+}
+
+th,
+td {
+    /* border: 1px solid rgb(76, 79, 81); */
+    padding: 0.5em;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.prvni {
+    background-color: rgb(116, 120, 122);
+
+}
+
+.row__header {
+    background-color: rgb(116, 120, 122);
+}
+
+#row--white {
+    background-color: white;
+}
+
+.red {
+    background-color: rgb(223, 94, 94);
+
+}
+
+
+td {
+    color: rgb(208, 165, 11);
+    border: 1px solid rgb(76, 79, 81);
+}
+
+tbody th:nth-child(1) {
+    writing-mode: vertical-lr;
+    transform: rotate(-180deg);
+}
+
+.row__header--small {
+    font-size: 10px;
+    color: black;
+    font-weight: normal;
+
+
+}
+
+.druhy {
+    border: 1px solid rgb(76, 79, 81);
+
+}
+
+thead tr:first-child {
+    border: none;
+}
