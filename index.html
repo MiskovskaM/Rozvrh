@@ -17,7 +17,32 @@
             padding: 0.5em;
             text-align: center;
             vertical-align: middle;
+        }
 
+        .prvni {
+            background-color: rgb(116, 120, 122);
+
+        }
+
+        .row__header {
+            background-color: rgb(116, 120, 122);
+        }
+
+        #row--white {
+            background-color: white;
+        }
+
+        .red {
+            background-color: rgb(223, 94, 94);
+
+        }
+
+        /* table>tbody >td * {
+            color: rgb(191, 158, 40)
+        } */
+
+        td {
+            color: rgb(208, 165, 11)
         }
     </style>
 </head>
@@ -25,9 +50,15 @@
 <body>
     <table>
 
+        <colgroup class="prvni">
+            <col>
+        </colgroup>
+
+
+
         <thead>
-            <tr>
-                <td></td>
+            <tr class="row__header">
+                <td id="row--white"></td>
                 <th>0</th>
                 <th>1</th>
                 <th>2</th>
@@ -45,22 +76,22 @@
             <tr>
                 <th rowspan="2">PO</th>
                 <td rowspan="2"> </td>
-                <td>OTEC</td> <!-- cervena -->
+                <td class="red">OTEC</td> <!-- cervena -->
                 <td>ZBZ</td>
                 <td rowspan="2">MAT</td>
                 <td rowspan="2">MAT</td>
                 <td>PRO</td>
                 <td>PRO</td>
                 <td rowspan="2">PRO</td>
-                <td rowspan="2"></td> <!-- cervena -->
-                <td rowspan="2"></td> <!-- cervena -->
+                <td rowspan="2" class="red"></td> <!-- cervena -->
+                <td rowspan="2" class="red"></td> <!-- cervena -->
             </tr>
 
             <tr>
 
                 <td>VRT</td>
                 <td>ZOK</td>
-                <td>TTK</td> <!-- cervena -->
+                <td class="red">TTK</td> <!-- cervena -->
                 <td>TPR</td>
             </tr>
 
@@ -98,8 +129,8 @@
                 <td rowspan="2">FYZ</td>
                 <td>ANJ</td>
                 <td rowspan="2"></td>
-                <td rowspan="2"></td> <!-- cervena -->
-                <td rowspan="2"></td> <!-- cervena -->
+                <td rowspan="2" class="red"></td> <!-- cervena -->
+                <td rowspan="2" class="red"></td> <!-- cervena -->
 
             </tr>
 
@@ -129,13 +160,13 @@
 
             <tr>
                 <th rowspan="2">PÁ</th>
-                <td rowspan="2">TEMA </td> <!-- cervena -->
+                <td rowspan="2" class="red">TEMA </td> <!-- cervena -->
                 <td rowspan="2">TEV</td>
                 <td rowspan="2">TEV</td>
                 <td rowspan="2">CJL</td>
                 <td>ANJ</td>
-                <td rowspan="2"></td> <!-- cervena -->
-                <td rowspan="2">TTK</td> <!-- cervena -->
+                <td rowspan="2" class="red"></td> <!-- cervena -->
+                <td rowspan="2" class="red">TTK</td> <!-- cervena -->
                 <td rowspan="2"></td>
                 <td rowspan="2"></td>
                 <td rowspan="2"></td>
